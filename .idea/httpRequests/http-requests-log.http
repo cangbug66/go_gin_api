@@ -1,0 +1,62 @@
+POST http://localhost:8000/api/v1/tags/add
+Accept: */*
+Cache-Control: no-cache
+
+{"name":"ok"}
+
+###
+
+POST http://localhost:8000/api/v1/tags/add?name=sadfasdf
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8000/api/v1/tags/add?name=sadfasdf
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8000/api/v1/tags/add?name=sadfasdf
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8000/api/v1/tags/add?name=sadfasdf
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8000/api/v1/tags/add?name=sadfasdf
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8000/api/v1/tags/add?name=sadfasdf
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8000/api/v1/tags/add?name=sadfasdf
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8000/api/v1/tags/add?name=sadfasdf
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8000/api/v1/tags/add?name=sadfasdf
+Accept: */*
+Cache-Control: no-cache
+
+###
+
