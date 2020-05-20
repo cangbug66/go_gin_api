@@ -1,0 +1,48 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] GET    /api/v1/tags              --> github.com/gin-gonic/gin.RecoveryWithWriter.func1 (2 handlers)
+[GIN-debug] POST   /api/v1/tags/add          --> go_gin_api/routers/api/v1.AddTag (3 handlers)
+[GIN-debug] GET    /api/auth/v1/auth         --> go_gin_api/routers.route.func1 (4 handlers)
+[GIN-debug] GET    /test                     --> go_gin_api/routers/api/test.TestItem (3 handlers)
+[GIN] 2020/05/18 - 15:01:46 | 200 |    2.678197ms |    192.168.10.1 | GET      /swagger/index.html
+[GIN] 2020/05/18 - 15:01:46 | 200 |    1.259047ms |    192.168.10.1 | GET      /swagger/swagger-ui.css
+[GIN] 2020/05/18 - 15:01:46 | 200 |    6.304891ms |    192.168.10.1 | GET      /swagger/swagger-ui-standalone-preset.js
+[GIN] 2020/05/18 - 15:01:46 | 200 |   13.186595ms |    192.168.10.1 | GET      /swagger/swagger-ui-bundle.js
+[GIN] 2020/05/18 - 15:01:46 | 200 |    1.227945ms |    192.168.10.1 | GET      /swagger/doc.json
+[GIN] 2020/05/18 - 15:01:46 | 200 |    2.370396ms |    192.168.10.1 | GET      /swagger/favicon-32x32.png
+[GIN] 2020/05/18 - 15:01:46 | 200 |      86.927µs |    192.168.10.1 | GET      /swagger/index.html
+[GIN] 2020/05/18 - 15:01:46 | 304 |      43.773µs |    192.168.10.1 | GET      /swagger/swagger-ui.css
+[GIN] 2020/05/18 - 15:01:46 | 304 |      20.034µs |    192.168.10.1 | GET      /swagger/swagger-ui-bundle.js
+[GIN] 2020/05/18 - 15:01:46 | 304 |      20.764µs |    192.168.10.1 | GET      /swagger/swagger-ui-standalone-preset.js
+[GIN] 2020/05/18 - 15:01:46 | 200 |     106.196µs |    192.168.10.1 | GET      /swagger/doc.json
+[GIN] 2020/05/18 - 15:01:46 | 200 |      32.631µs |    192.168.10.1 | GET      /swagger/favicon-32x32.png
+[GIN] 2020/05/18 - 15:01:47 | 200 |      61.965µs |    192.168.10.1 | GET      /swagger/index.html
+[GIN] 2020/05/18 - 15:01:47 | 304 |      32.945µs |    192.168.10.1 | GET      /swagger/swagger-ui.css
+[GIN] 2020/05/18 - 15:01:47 | 304 |      63.248µs |    192.168.10.1 | GET      /swagger/swagger-ui-standalone-preset.js
+[GIN] 2020/05/18 - 15:01:47 | 304 |      28.129µs |    192.168.10.1 | GET      /swagger/swagger-ui-bundle.js
+[GIN] 2020/05/18 - 15:01:47 | 200 |     114.685µs |    192.168.10.1 | GET      /swagger/doc.json
+[GIN] 2020/05/18 - 15:01:47 | 200 |      39.135µs |    192.168.10.1 | GET      /swagger/favicon-32x32.png
+[GIN] 2020/05/18 - 15:01:47 | 200 |       35.55µs |    192.168.10.1 | GET      /swagger/index.html
+[GIN] 2020/05/18 - 15:01:47 | 200 |     118.736µs |    192.168.10.1 | GET      /swagger/doc.json
+[GIN] 2020/05/18 - 15:01:47 | 200 |      30.494µs |    192.168.10.1 | GET      /swagger/favicon-32x32.png
+[GIN] 2020/05/18 - 15:01:47 | 200 |      55.392µs |    192.168.10.1 | GET      /swagger/index.html
+[GIN] 2020/05/18 - 15:01:47 | 200 |     103.213µs |    192.168.10.1 | GET      /swagger/doc.json
+[GIN] 2020/05/18 - 15:01:47 | 200 |      31.411µs |    192.168.10.1 | GET      /swagger/favicon-32x32.png
+[GIN] 2020/05/18 - 15:01:51 | 200 |      65.376µs |    192.168.10.1 | GET      /swagger/index.html
+[GIN] 2020/05/18 - 15:01:51 | 304 |      29.597µs |    192.168.10.1 | GET      /swagger/swagger-ui.css
+[GIN] 2020/05/18 - 15:01:51 | 304 |      30.052µs |    192.168.10.1 | GET      /swagger/swagger-ui-bundle.js
+[GIN] 2020/05/18 - 15:01:51 | 304 |      25.044µs |    192.168.10.1 | GET      /swagger/swagger-ui-standalone-preset.js
+[GIN] 2020/05/18 - 15:01:51 | 200 |     117.513µs |    192.168.10.1 | GET      /swagger/doc.json
+[GIN] 2020/05/18 - 15:01:51 | 200 |      85.155µs |    192.168.10.1 | GET      /swagger/favicon-32x32.png
+[GIN] 2020/05/18 - 15:01:51 | 200 |      40.207µs |    192.168.10.1 | GET      /swagger/index.html
+[GIN] 2020/05/18 - 15:01:51 | 200 |     117.282µs |    192.168.10.1 | GET      /swagger/doc.json
+[GIN] 2020/05/18 - 15:01:51 | 200 |      52.774µs |    192.168.10.1 | GET      /swagger/favicon-32x32.png
+[GIN] 2020/05/18 - 15:15:14 | 200 |          60µs |       127.0.0.1 | GET      /swagger/index.html
+[GIN] 2020/05/18 - 15:15:14 | 200 |     628.498µs |       127.0.0.1 | GET      /swagger/swagger-ui-bundle.js
+[GIN] 2020/05/18 - 15:15:14 | 200 |     263.299µs |       127.0.0.1 | GET      /swagger/swagger-ui.css
+[GIN] 2020/05/18 - 15:15:14 | 200 |     627.859µs |       127.0.0.1 | GET      /swagger/swagger-ui-standalone-preset.js
+[GIN] 2020/05/18 - 15:15:14 | 200 |     1.02517ms |       127.0.0.1 | GET      /swagger/doc.json
+[GIN] 2020/05/18 - 15:15:14 | 200 |      49.814µs |       127.0.0.1 | GET      /swagger/favicon-32x32.png

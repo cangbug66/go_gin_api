@@ -3,27 +3,20 @@ package main
 import (
     "fmt"
     "github.com/gin-gonic/gin"
-    "go_gin_api/models"
-    "go_gin_api/pkg/setting"
-    "go_gin_api/routers"
+    "go_gin_api/app/routers"
+    "go_gin_api/appInit"
     "log"
     "net/http"
 )
 
-func init(){
-    setting.Setup()
-    models.Setup()
-
-}
-
 func main() {
-    defer models.CloseDB()
-    gin.SetMode(setting.ServerSetting.RunMode)
+    defer appInit.CloseDB()
+    gin.SetMode(appInit.ServerSetting.RunMode)
     routersInit:=routers.InitRouter()
 
     //readTimeout := setting.ServerSetting.ReadTimeout
     //writeTimeout := setting.ServerSetting.WriteTimeout
-    addr := fmt.Sprintf(":%d", setting.ServerSetting.HttpPort)
+    addr := fmt.Sprintf(":%d", appInit.ServerSetting.HttpPort)
     //maxHeaderBytes := 1 << 20
     server:=&http.Server{
         Addr:addr,
